@@ -1,0 +1,13 @@
+C:\Users\vini-\Desktop\exercicios c#\TREINO2\TREINO2\bin\Debug\netcoreapp3.1\TREINO2.exe
+C:\Users\vini-\Desktop\exercicios c#\TREINO2\TREINO2\bin\Debug\netcoreapp3.1\TREINO2.deps.json
+C:\Users\vini-\Desktop\exercicios c#\TREINO2\TREINO2\bin\Debug\netcoreapp3.1\TREINO2.runtimeconfig.json
+C:\Users\vini-\Desktop\exercicios c#\TREINO2\TREINO2\bin\Debug\netcoreapp3.1\TREINO2.runtimeconfig.dev.json
+C:\Users\vini-\Desktop\exercicios c#\TREINO2\TREINO2\bin\Debug\netcoreapp3.1\TREINO2.dll
+C:\Users\vini-\Desktop\exercicios c#\TREINO2\TREINO2\bin\Debug\netcoreapp3.1\TREINO2.pdb
+C:\Users\vini-\Desktop\exercicios c#\TREINO2\TREINO2\obj\Debug\netcoreapp3.1\TREINO2.csprojAssemblyReference.cache
+C:\Users\vini-\Desktop\exercicios c#\TREINO2\TREINO2\obj\Debug\netcoreapp3.1\TREINO2.AssemblyInfoInputs.cache
+C:\Users\vini-\Desktop\exercicios c#\TREINO2\TREINO2\obj\Debug\netcoreapp3.1\TREINO2.AssemblyInfo.cs
+C:\Users\vini-\Desktop\exercicios c#\TREINO2\TREINO2\obj\Debug\netcoreapp3.1\TREINO2.csproj.CoreCompileInputs.cache
+C:\Users\vini-\Desktop\exercicios c#\TREINO2\TREINO2\obj\Debug\netcoreapp3.1\TREINO2.dll
+C:\Users\vini-\Desktop\exercicios c#\TREINO2\TREINO2\obj\Debug\netcoreapp3.1\TREINO2.pdb
+C:\Users\vini-\Desktop\exercicios c#\TREINO2\TREINO2\obj\Debug\netcoreapp3.1\TREINO2.genruntimeconfig.cache
