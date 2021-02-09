@@ -45,6 +45,8 @@ namespace TREINO2
                 Console.WriteLine("4 - subtrair");
                 Console.WriteLine("5 - Delta/Baskara");
                 Console.WriteLine("6 - Raiz Quadrada");
+                Console.WriteLine("7 - Sen, Cos ou Tang");
+                Console.WriteLine("8 - Log");
 
 
                 int resp = int.Parse(Console.ReadLine());
@@ -707,6 +709,138 @@ namespace TREINO2
                     }
 
 
+
+
+                }
+                else if(resp == 7)
+                {
+                    int cont = 0;
+                    for (int i = 0; i < numeros.Length; i++)
+                    {
+                        Console.WriteLine(cont + " - " + numeros[i]);
+                        cont = cont + 1;
+
+                    }
+                    Console.WriteLine("Qual dos numeros acima você deseja Utilizar: ");
+                    Console.WriteLine("OPÇÃO APENAS PARA UM ANGULO POR CALCULO!!!!");
+                    string[] selecionador = Console.ReadLine().Split(" ");
+                    Console.WriteLine("Deseja Fazer o calculo do sen, cos, tan ou todos?");
+                    string resp4op = Console.ReadLine();
+
+                    if(resp4op == "sen")
+                    {
+                        num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+                        Console.WriteLine("O seno do angulo de " + num1 +" é: " + Math.Sin(num1));
+
+                        Console.WriteLine("Deseja fazer outras operações? (sim/nao)");
+                        final = Console.ReadLine();
+                    }
+                    else if(resp4op == "cos")
+                    {
+                        num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+                        Console.WriteLine("O cosseno do angulo de " + num1 +" é: " + Math.Cos(num1));
+
+                        Console.WriteLine("Deseja fazer outras operações? (sim/nao)");
+                        final = Console.ReadLine();
+                    }
+                    else if(resp4op == "tan")
+                    {
+                        num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+                        Console.WriteLine("A Tangente do angulo " + num1 +" é: " + Math.Tan(num1));
+
+                        Console.WriteLine("Deseja fazer outras operações? (sim/nao)");
+                        final = Console.ReadLine();
+                    }
+                    else if (resp4op == "todos")
+                    {
+                        num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+                        Console.WriteLine("O seno do angulo de " + num1 + " é: " + Math.Sin(num1));
+                        
+                        num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+                        Console.WriteLine("O cosseno do angulo de " + num1 + " é: " + Math.Cos(num1));
+
+                        num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+                        Console.WriteLine("A tangente do angulo de " + num1 + " é: " + Math.Tan(num1));
+
+                        Console.WriteLine("Deseja fazer outras operações? (sim/nao)");
+                        final = Console.ReadLine();
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("RESPOSTA NÃO ENCONTRADA!!!!!");
+
+                        Console.WriteLine("Deseja fazer outras operações? (sim/nao)");
+                        final = Console.ReadLine();
+                    }
+
+                    
+                }
+                else if (resp == 8)
+                {
+                    Console.WriteLine("Quantos números você deseja tirar o LOG?");
+                    Console.WriteLine("OBS: MAXIMO DE 3 NUMEROS");
+                    int escolha = int.Parse(Console.ReadLine());
+                    if(escolha == 1)
+                    {
+                        int cont = 0;
+
+                        for (int i = 0; i < numeros.Length; i++)
+                        {
+
+                            Console.WriteLine(cont + " - " + numeros[i]);
+                            cont = cont + 1;
+                        }
+
+                        Console.WriteLine("Qual dos numeros acima você deseja fazer o LOG: ");
+                        Console.WriteLine("Digite todos os que você deseja respeitando a sequencia ordinal (EX: 2)");
+                        string[] selecionador = Console.ReadLine().Split(" ");
+
+                        num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+                        Console.WriteLine("O log de " + num1 + "é: " + Math.Log(num1));
+
+                    }
+                    else if(escolha == 2)
+                    {
+                        int cont = 0;
+
+                        for (int i = 0; i < numeros.Length; i++)
+                        {
+
+                            Console.WriteLine(cont + " - " + numeros[i]);
+                            cont = cont + 1;
+                        }
+                        Console.WriteLine("Qual dos numeros acima você deseja fazer o LOG: ");
+                        Console.WriteLine("Digite todos os que você deseja respeitando a sequencia ordinal (EX: 2 5)");
+                        string[] selecionador = Console.ReadLine().Split(" ");
+
+                        num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+                        num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[1])]);
+                        Console.WriteLine("O log de " + num1 + "é: " + Math.Log(num1));
+                        Console.WriteLine("O log de " + num2 + "é: " + Math.Log(num2));
+
+                    }
+                    else if(escolha == 3)
+                    {
+                        int cont = 0;
+
+                        for (int i = 0; i < numeros.Length; i++)
+                        {
+
+                            Console.WriteLine(cont + " - " + numeros[i]);
+                            cont = cont + 1;
+                        }
+                        Console.WriteLine("Qual dos numeros acima você deseja fazer o LOG: ");
+                        Console.WriteLine("Digite todos os que você deseja respeitando a sequencia ordinal (EX: 2 3 4)");
+                        string[] selecionador = Console.ReadLine().Split(" ");
+
+                        num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+                        num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[1])]);
+                        Console.WriteLine("O log de " + num1 + "é: " + Math.Log(num1));
+                        Console.WriteLine("O log de " + num2 + "é: " + Math.Log(num2));
+                        Console.WriteLine("O log de " + num3 + "é: " + Math.Log(num3));
+
+                    }
 
 
                 }

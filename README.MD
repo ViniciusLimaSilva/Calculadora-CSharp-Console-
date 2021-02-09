@@ -12,6 +12,8 @@
 4. Subtrair
 5. Delta/Baskara
 6. Raiz Quadrada
+7. Sin, Cos, Tan
+8. Log
 
 ### Funções a serem implementadas
 
@@ -24,8 +26,8 @@
 - [ ] Notação Ciêntifica
 - [ ] PI
 - [ ] Exp
-- [ ] Log
-- [ ] Sin, Cos, Tan
+- [x] Log
+- [x] Sin, Cos, Tan
 - [ ] Hex, Dec, Oct, Bin
 
 ## *Para se Inspirar:*
