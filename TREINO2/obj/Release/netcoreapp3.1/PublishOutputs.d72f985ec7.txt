@@ -1,0 +1,5 @@
+C:\Users\vini-\Desktop\3\TREINO2.exe
+C:\Users\vini-\Desktop\3\TREINO2.dll
+C:\Users\vini-\Desktop\3\TREINO2.deps.json
+C:\Users\vini-\Desktop\3\TREINO2.runtimeconfig.json
+C:\Users\vini-\Desktop\3\TREINO2.pdb

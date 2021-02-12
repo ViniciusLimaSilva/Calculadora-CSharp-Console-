@@ -22,6 +22,8 @@ namespace TREINO2
             int div2;
             double aDelta = 0, bDelta = 0, cDelta = 0, delta, raiz1, raiz2;
             string final = "modificada";
+
+            
             do
             {
 
@@ -47,6 +49,8 @@ namespace TREINO2
                 Console.WriteLine("6 - Raiz Quadrada");
                 Console.WriteLine("7 - Sen, Cos ou Tang");
                 Console.WriteLine("8 - Log");
+                Console.WriteLine("9 - Bin, Oct pu Hex");
+                Console.WriteLine("10 - Base ^ ao expoente");
 
 
                 int resp = int.Parse(Console.ReadLine());
@@ -841,6 +845,156 @@ namespace TREINO2
                         Console.WriteLine("O log de " + num3 + "é: " + Math.Log(num3));
 
                     }
+
+
+                }
+
+                else if (resp == 9)
+                {
+                    int cont = 0;
+                    for (int i = 0; i < numeros.Length; i++)
+                    {
+                        Console.WriteLine(cont + " - " + numeros[i]);
+                        cont = cont + 1;
+
+                    }
+                    Console.WriteLine("Qual dos numeros acima você deseja Utilizar: ");
+                    Console.WriteLine("OBS!!!! APENAS UM NUMERO");
+                    string[] selecionador = Console.ReadLine().Split(" ");
+                    Console.WriteLine("Deseja Fazer o calculo do bin, oct, hex ou todos?");
+                    string resp4op = Console.ReadLine();
+
+                    if (resp4op == "bin")
+                    {
+
+                        int resto;
+                        num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+
+                        string result = string.Empty;
+
+                        while (num1 > 0)
+                        {
+                            resto = num1 % 2;
+                            num1 /= 2;
+                            result = resto + result;
+                        }
+                        Console.WriteLine("O binario do numero: " + num1 + " é: " + result);
+
+                        Console.WriteLine("Deseja fazer outras operações? (sim/nao)");
+                        final = Console.ReadLine();
+                    }
+                    else if (resp4op == "oct")
+                    {
+                        int resto;
+                        num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+
+                        string result = string.Empty;
+
+                        while (num1 > 0)
+                        {
+                            resto = num1 % 8;
+                            num1 /= 8;
+                            result = resto + result;
+                        }
+                        Console.WriteLine("O Octal do numero: " + num1 + " é: " + result);
+
+                        Console.WriteLine("Deseja fazer outras operações? (sim/nao)");
+                        final = Console.ReadLine();
+                    }
+                
+                    else if (resp4op == "hex")
+                    {
+                    int resto;
+                    num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+
+                    string result = string.Empty;
+
+                    while (num1 > 0)
+                    {
+                        resto = num1 % 16;
+                        num1 /= 16;
+                        result = resto + result;
+                    }
+                    Console.WriteLine("O Hexadecimal do numero: " + num1 + " é: " + result);
+
+                    Console.WriteLine("Deseja fazer outras operações? (sim/nao)");
+                    final = Console.ReadLine();
+                }
+            
+                    else if (resp4op == "todos")
+                    {
+                        int resto;
+                        num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+
+                        string result = string.Empty;
+
+                        while (num1 > 0)
+                        {
+                            resto = num1 % 2;
+                            num1 /= 2;
+                            result = resto + result;
+                        }
+                        Console.WriteLine("O binario do numero: " + num1 + " é: " + result);
+
+                        int resto2;
+                        num2 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+
+                        string result2 = string.Empty;
+                        while (num2 > 0)
+                        {
+                            resto2 = num2 % 8;
+                            num2 /= 8;
+                            result2 = resto2 + result2;
+                        }
+                        Console.WriteLine("O octal do numero: " + num2 + " é: " + result2);
+
+                        int resto3;
+                        num3 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+                        string result3 = string.Empty;
+                        while (num3 > 0)
+                        {
+                            resto3 = num3 % 16;
+                            num3 /= 16;
+                            result3 = resto3 + result3;
+                        }
+                        Console.WriteLine("O hexadeciaml do numero: " + num3 + " é: " + result3);
+
+                        Console.WriteLine("Deseja fazer outras operações? (sim/nao)");
+                        final = Console.ReadLine();
+
+                    }
+                    else
+                    {
+                        Console.WriteLine("RESPOSTA NÃO ENCONTRADA!!!!!");
+
+                        Console.WriteLine("Deseja fazer outras operações? (sim/nao)");
+                        final = Console.ReadLine();
+                    }
+
+
+                }
+                else if(resp == 10)
+                {
+
+                    int cont = 0;
+                    for (int i = 0; i < numeros.Length; i++)
+                    {
+                        Console.WriteLine(cont + " - " + numeros[i]);
+                        cont = cont + 1;
+
+                    }
+                    Console.WriteLine("Qual dos numeros acima você deseja Utilizar: ");
+                    Console.WriteLine("OBS!!!! APENAS UM NUMERO");
+                    string[] selecionador = Console.ReadLine().Split(" ");
+                    Console.WriteLine("Qual seria o expoente do numero selecionado?");
+                    int exp = Convert.ToInt32(Console.ReadLine());
+                    num1 = Convert.ToInt32(numeros[Convert.ToInt32(selecionador[0])]);
+
+                    Console.WriteLine("O numero " + num1 + ", elavado ao numero " + exp + ", é igual a: " + Math.Pow(num1, exp));
+
+
+
+
 
 
                 }

@@ -1,8 +1,8 @@
 ## **Calculadora no console com funções extras** :cowboy_hat_face:
 
-## *Em fase de desenvolvimento*
+## *:heavy_check_mark: Completa* :heavy_check_mark:
 
-## *Código sendo feito totalmente em C#*
+## *Código feito totalmente em C#*
 
 ### Funções
 
@@ -14,6 +14,8 @@
 6. Raiz Quadrada
 7. Sin, Cos, Tan
 8. Log
+9. Hex, Dec, Oct, Bin
+10. base^expoente
 
 ### Funções a serem implementadas
 
@@ -23,12 +25,10 @@
 - [x] Subtrair
 - [x] Delta/Baskara
 - [x] Raiz Quadrada
-- [ ] Notação Ciêntifica
-- [ ] PI
-- [ ] Exp
+- [x] base^expoente
 - [x] Log
 - [x] Sin, Cos, Tan
-- [ ] Hex, Dec, Oct, Bin
+- [x] Hex, Dec, Oct, Bin
 
 ## *Para se Inspirar:*
 
